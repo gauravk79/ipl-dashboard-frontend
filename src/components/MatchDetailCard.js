@@ -9,7 +9,7 @@ export const MatchDetailCard = ({ teamName, match }) => {
   const otherTeamRoute = `/teams/${otherTeam}`;
   const isMatchWon = teamName === match.matchWinner;
   const date = new Date(match.date);
-  console.log(date);
+
   return (
     <div
       className={
