@@ -1,4 +1,6 @@
 .HeaderSection {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
   padding: 40px;
   margin-bottom: 40px;
   background-color: green;
@@ -6,5 +8,9 @@
   .app-name {
     text-align: center;
     font-size: 40px;
+  }
+
+  img {
+    height: 60px;
   }
 }

@@ -6,7 +6,6 @@ import { MatchDetailCard } from "../components/MatchDetailCard";
 import { MatchSmallCard } from "../components/MatchSmallCard";
 
 import "./TeamPage.scss";
-import { HeaderSection } from "../components/HeaderSection";
 
 export const TeamPage = () => {
   const [team, setTeam] = useState({ matches: [] });
@@ -15,7 +14,9 @@ export const TeamPage = () => {
 
   useEffect(() => {
     const fetchMatches = async () => {
-      const response = await fetch(`http://localhost:3001/teams/${teamName}`);
+      const response = await fetch(
+        `${process.env.REACT_APP_API_ROOT_URL}/teams/${teamName}`
+      );
       const data = await response.json();
       console.log(data);
       setTeam(data);

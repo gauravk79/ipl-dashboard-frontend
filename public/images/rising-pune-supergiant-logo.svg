@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">
+    <defs>
+        <mask id="Mask">
+            <rect x="0" y="0" width="100%" height="100%" rx="0" ry="0" fill="#fff"></rect>
+            <rect x="16" y="12" width="530" height="402" id="hole" rx="0" ry="0"></rect>
+        </mask>
+    </defs>
+    <rect x="0" y="0" width="100%" height="100%" mask="url(#Mask)" class="v2shadowMask" style="fill: rgba(0, 0, 0, 0.5);"></rect>
+    <use href="#hole" fill="rgba(0,0,0,0)" stroke="#fff" stroke-width="2" class="v2cropSection" style="cursor: move;"></use>
+    <g transform="translate(10, 6), rotate(0)" style="cursor: nwse-resize;">
+        <rect fill="rgba(0,0,0,0)" stroke="none" x="0" y="0" width="20" height="20" class="v2cropperHandle nw"></rect>
+        <path d="M5,0C2.2,0,0,2.2,0,5v15h6V6h14V0H5z" fill="#fff" class="v2cropperHandle nw"></path>
+    </g>
+    <g transform="translate(552, 6), rotate(90)" style="cursor: nesw-resize;">
+        <rect fill="rgba(0,0,0,0)" stroke="none" x="0" y="0" width="20" height="20" class="v2cropperHandle ne"></rect>
+        <path d="M5,0C2.2,0,0,2.2,0,5v15h6V6h14V0H5z" fill="#fff" class="v2cropperHandle ne"></path>
+    </g>
+    <g transform="translate(10, 420), rotate(270)" style="cursor: nesw-resize;">
+        <rect fill="rgba(0,0,0,0)" stroke="none" x="0" y="0" width="20" height="20" class="v2cropperHandle sw"></rect>
+        <path d="M5,0C2.2,0,0,2.2,0,5v15h6V6h14V0H5z" fill="#fff" class="v2cropperHandle sw"></path>
+    </g>
+    <g transform="translate(552, 420), rotate(180)" style="cursor: nwse-resize;">
+        <rect fill="rgba(0,0,0,0)" stroke="none" x="0" y="0" width="20" height="20" class="v2cropperHandle se"></rect>
+        <path d="M5,0C2.2,0,0,2.2,0,5v15h6V6h14V0H5z" fill="#fff" class="v2cropperHandle se"></path>
+    </g>
+    <rect fill="rgba(0,0,0,0)" stroke="none" x="36" y="2" width="490" height="30" class="v2cropperHandle n" style="cursor: ns-resize;"></rect>
+    <rect fill="rgba(0,0,0,0)" stroke="none" x="526" y="32" width="30" height="362" class="v2cropperHandle e" style="cursor: ew-resize;"></rect>
+    <rect fill="rgba(0,0,0,0)" stroke="none" x="36" y="404" width="490" height="30" class="v2cropperHandle s" style="cursor: ns-resize;"></rect>
+    <rect fill="rgba(0,0,0,0)" stroke="none" x="-4" y="32" width="30" height="362" class="v2cropperHandle w" style="cursor: ew-resize;"></rect>
+</svg>

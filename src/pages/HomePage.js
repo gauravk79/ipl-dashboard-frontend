@@ -1,5 +1,4 @@
 import { React, useEffect, useState } from "react";
-import { HeaderSection } from "../components/HeaderSection";
 import { TeamTile } from "../components/TeamTile";
 
 import "./HomePage.scss";
@@ -9,7 +8,9 @@ export const HomePage = () => {
 
   useEffect(() => {
     const fetchTeams = async () => {
-      const response = await fetch(`http://localhost:3001/teams`);
+      const response = await fetch(
+        `${process.env.REACT_APP_API_ROOT_URL}/teams`
+      );
       const data = await response.json();
       setTeams(data);
     };
