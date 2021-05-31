@@ -2,6 +2,7 @@ import { React } from "react";
 import { Link } from "react-router-dom";
 
 import "./MatchDetailCard.scss";
+import { TeamImage } from "./TeamImage";
 
 export const MatchDetailCard = ({ teamName, match }) => {
   if (!match) return null;
@@ -18,9 +19,12 @@ export const MatchDetailCard = ({ teamName, match }) => {
     >
       <div>
         <span className="vs">vs.</span>
-        <h1>
-          <Link to={otherTeamRoute}>{otherTeam}</Link>
-        </h1>
+        <span>
+          <h1>
+            <TeamImage teamName={otherTeam} />
+            <Link to={otherTeamRoute}>{otherTeam} </Link>
+          </h1>
+        </span>
         <h2 className="match-date">{date.toDateString()}</h2>
         <h3 className="match-venue">at {match.venue}</h3>
         <h3 className="match-result">

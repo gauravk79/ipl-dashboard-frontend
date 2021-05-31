@@ -6,6 +6,7 @@ import { MatchDetailCard } from "../components/MatchDetailCard";
 import { MatchSmallCard } from "../components/MatchSmallCard";
 
 import "./TeamPage.scss";
+import { TeamImage } from "../components/TeamImage";
 
 export const TeamPage = () => {
   const [team, setTeam] = useState({ matches: [] });
@@ -32,6 +33,7 @@ export const TeamPage = () => {
   return (
     <div className="TeamPage">
       <div className="team-name-section">
+        <TeamImage teamName={team.teamName} />
         <h1 className="team-name">{team.teamName}</h1>
       </div>
       <div className="win-loss-section">

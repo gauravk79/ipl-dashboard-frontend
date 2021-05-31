@@ -9,6 +9,10 @@
     grid-column: span 3;
     justify-self: start;
     align-self: center;
+    img {
+      height: 150px;
+      width: auto;
+    }
   }
 
   .win-loss-section {
